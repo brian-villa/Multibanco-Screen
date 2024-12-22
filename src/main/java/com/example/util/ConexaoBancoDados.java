@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 
 public class ConexaoBancoDados {
-    private static final String URL = System.getenv("DB_URL");
-    private static final String USUARIO = System.getenv("LOGIN_DB");
-    private static final String SENHA = System.getenv("PWD_DB");
+    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=multibanco_app;encrypt=true;trustServerCertificate=true;sslProtocol=TLSv1.2";
+    private static final String USUARIO = "sa";
+    private static final String SENHA = "Bri@nvilla1993";
 
     public static Connection conectar() {
         try {
